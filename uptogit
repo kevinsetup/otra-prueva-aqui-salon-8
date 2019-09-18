@@ -30,14 +30,14 @@ else
 	done
 	
 	# Si llegamos hasta aquí, indicamos a Git los archivos a subir
-	git add $*
+	cd ~/home/alumno/Descargas/projects/website/ && git add $*
 	
 	# Esto nos pedira el mensaje del commit
 	echo "Introduce el mensaje del commit:"
 	read TXT
-	git commit -m "$TXT"
+	cd ~/home/alumno/Descargas/projects/website/ && git commit -m "$TXT"
 
 	# Y terminamos subiendo los archivos
-	git push origin master
+	cd ~/home/alumno/Descargas/projects/website/ && git push origin master
 
 fi
