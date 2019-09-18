@@ -33,9 +33,7 @@ else
 	cd ~/home/alumno/Descargas/projects/website/ && git add $*
 	
 	# Esto nos pedira el mensaje del commit
-	echo "Introduce el mensaje del commit:"
-	read TXT
-	cd ~/home/alumno/Descargas/projects/website/ && git commit -m "$TXT"
+	cd ~/home/alumno/Descargas/projects/website/ && git commit -m `date`
 
 	# Y terminamos subiendo los archivos
 	cd ~/home/alumno/Descargas/projects/website/ && git push origin master
